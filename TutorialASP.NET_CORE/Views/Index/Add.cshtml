@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Sum Page";
+}
+
+@model MathViewModel
+
+<form method="get">
+    <div class="mb-3">
+        <label for="" class="form-label">Number 1: </label>
+        <input type="number" class="form-control" id="nbFirst" name="a" value="@Model.a">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Number 2: </label>
+        <input type="number" class="form-control" id="nbSecond" name="b" value="@Model.b">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3">
+        <label for="" class="form-label">Result</label>
+        <input type="number" class="form-control" id="result" name="result" value="@Model.result">
+    </div>
+</form>
